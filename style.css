@@ -1,0 +1,453 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Header and logo */
+
+header{
+    display: flex;
+    padding: 23px;
+}
+
+.container::before{
+    content: "";
+    background: url(./img/bac1.jpg) center;
+    position: absolute;
+    z-index: -1;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.75;
+}
+
+.navbar{
+    margin-left: auto;
+}
+
+#nav-ul{
+display: flex;
+list-style: none;
+padding: 30px 23px;
+font-size: 23px;
+}
+
+.ddn-ul, .sddn-ul{
+    list-style: none;
+}
+
+#nav-li a{
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0 21px;
+    color: white;
+}
+
+#nav-li a:hover{
+   color: black;
+}
+
+.logo img{
+    height: 100px;
+}
+
+.sub-menu-1 ul{
+    list-style: none;
+}
+
+.sub-menu-1{
+    display: none;
+}
+
+.navbar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    margin-left: 15px;
+    background-color: blueviolet;
+}
+
+.navbar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+
+.navbar ul li:hover .sub-menu-1 ul li{
+    width: 113px;
+    padding: 5px;
+    text-align: left;
+    font-size: 21px;
+    background: transparent;
+    border-bottom: 1px dotted white;
+}
+
+.navbar ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+
+.navbar ul li:hover .sub-menu-1 ul li a:hover{
+    color: yellowgreen;
+}
+
+.sub-menu-2{
+    display: none;
+}
+
+.hover-me:hover .sub-menu-2{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 120px;
+    background-color: blueviolet;
+}
+
+/* Home */
+.home{
+    height: 75vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    animation-name: example;
+    animation-duration: 0.8s;
+    animation-timing-function: linear;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* @keyframes example{
+    0% {
+        visibility: hidden;
+    }
+    
+    25% {
+        visibility: hidden;
+        top:100px;
+    }
+    
+
+    100%{
+        top: 0px;
+    }
+} */
+
+
+.home-div{
+    width: 100%;
+}
+
+#home-h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    padding: 23px;
+    color: white;
+}
+
+#home-p{
+    font-family: 'Roboto', sans-serif;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 35px;
+    font-size: 20px;
+    color: white;
+}
+
+#home-input{
+    width: 600px;
+    height: 23px;
+    padding: 10px;
+    font-size: 18px;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.home-btn-ipt{
+    padding: 14px;
+}
+
+#home-btn{
+    background-color: #00eaff;
+    padding:15px 30px ;
+    color: #081158;
+    border-radius: 7px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    font-family: Arial;
+}
+
+.numbers{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
+
+.counterNumber{
+    font-size: 40px;
+    padding-bottom: 13px;
+}
+
+.counter{
+    padding: 23px;
+}
+
+/* Cards */
+
+.cont{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 23px;
+    margin-top: 100px;
+}
+
+
+.card{
+    display: flex;
+    width: 400px;
+    height: 200px;
+    padding: 23px;
+    box-shadow: 0 15px 30px 0 #9C27B0;
+    background-color: white;
+    padding-top: 23px;
+}
+
+.logo{
+    font-size: 75px;
+    display: flex;
+    align-items: center;
+    padding-right: 23px;
+}
+
+.cardHeading{
+    font-size: 25px;
+    padding-bottom: 18px;
+}
+
+.cardPara1{
+    font-size: 20px;
+    padding-bottom: 12px;
+}
+
+.headingPara{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cardPara2{
+    padding-top: 5px;
+}
+
+.cardPara2 a{
+    text-decoration: none;
+    color: rgb(9, 9, 243);
+}
+
+/* About Section */
+
+
+.about{
+    display: flex;
+    margin-top: 23px;
+    margin-bottom: 60px;
+}
+
+#aboutImg{
+    width: 726px;
+    margin-top: 10px;
+}
+
+.aboutPara{
+    padding: 28px;
+}
+
+.aboutPara h1{
+    
+    font-size: 40px;
+    padding: 10px 0;
+}
+
+.aboutPara p{
+    
+    font-size: 23px;
+    padding: 10px 0;
+    font-family: system-ui;
+}
+
+.aboutCard{
+    display: flex;
+    padding-top: 23px;
+}
+
+.aboutlogo{
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    padding-right: 29px;
+}
+
+#aboutHeading{
+    font-size: 20px;
+}
+
+
+.chp1{
+    padding-left: 23px;
+}
+
+.container1{
+    background: url(./img/bg1.jfif) fixed;
+    height: 80vh;
+    position: sticky;
+}
+
+.container1::before{
+    content: "";
+    background-color: rgb(76 85 153 / 80%);
+    position: absolute;
+    z-index: -1;
+    height: 80vh;
+    width: 100%;
+    opacity: 0.75;
+}
+
+.cont1hp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    color: white;
+    font-family: 'Roboto';
+}
+
+.cont1head{
+    font-size: 40px;
+    padding-bottom: 10px
+}
+
+.cont1para{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+/* News */
+
+.news{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.newsimg img{
+    height: 200px;
+    transition: 0.5s all ease-in-out;
+}
+
+.newsimg{
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.newsimg:hover img{
+    transform: scale(1.2);
+}
+
+.newshead{
+    font-size: 30px;
+    text-align: center;
+    padding: 40px;
+}
+
+.newscard{
+    width: 25%;
+    padding: 30px;
+}
+
+.newsh{
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.newshead1{
+    font-size: 23px;
+    padding-top: 10px;
+}
+
+.newsp1{
+    padding: 13px 0;
+    color: rgb(0 0 0 / 50%);
+    font-size: 18px;
+}
+
+.newsa a{
+    text-decoration: none;
+    color: #060e46;
+    font-size: 18px;
+}
+/* Footer */
+
+footer{
+    height: 450px;
+    background-color: #efefef;
+    color: #777;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footdiv1{
+    display: flex;
+    padding: 40px;
+}
+
+.footCol1, .footCol2{
+    width: 25%;
+}
+
+.footCol1{
+    padding-right: 40px;
+}
+.col1head{
+    font-size: 25px;
+    color: black;
+    padding-bottom: 40px;
+}
+
+.col1p1, .footli a, .col1icons{
+    font-size: 20px;
+}
+
+.col1p2{
+    font-size: 23px;
+}
+
+.footul{
+    list-style: none;
+}
+
+.footli a {
+    text-decoration: none;
+    color: #777;
+}
+
+.col1p2{
+    color: black;
+    font-weight: bold;
+}
+
+.col1p1,.col1p2{
+    padding-bottom: 30px;
+}
+
+.footli{
+    padding-bottom: 25px;
+
+}
+
+.col1icons a{
+    color: black;
+    padding-right: 10px;
+    font-size: 28px;
+}
+
+.footdiv2{
+    text-align: center;
+}
